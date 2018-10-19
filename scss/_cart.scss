@@ -1,0 +1,187 @@
+.prod-info-detail{
+  width:750px;
+}
+.cart-box{
+  //height: 165px;
+  padding-top: 22px;
+  .prod-pic{
+    float: left;
+  }
+  .prod-desc{
+    padding-left: 22px;
+    overflow: auto;
+    .prod-name{
+      color: $text-main;
+      font-weight: 400;
+      font-size: 13px;
+      padding-top: 13px;
+      padding-bottom: 35px;
+      text-transform: uppercase;
+    }
+  }
+}
+  .prod-quantity > input[type=number]{
+    width: 55px;
+    height: 30px;
+    font-family: LatoWeb;
+    color: #656565;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid $border-color;
+    -moz-appearance:textfield;
+
+  }
+.prod-quantity input::-webkit-outer-spin-button,
+.prod-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.char, .char + dd{
+  display: inline-block;
+}
+.char{
+  color: #575757;
+  line-height: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.char + dd{
+  font-weight: 300;
+  color: #6f6e6e;
+}
+.shopping-cart{
+  padding-top: 90px;
+  padding-bottom: 60px;
+  &__item-group{
+    text-align: center;
+    font-size: 13px;
+    .item-header{
+      font-weight: bold;
+      text-transform: uppercase;
+      width:200px;
+      padding-bottom: 20px;
+
+    }
+    td{
+      height: 165px;
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+    }
+    .prod-info-detail{
+      text-align: left;
+
+    }
+    .prod-operate{
+      color: #c0c0c0;
+    }
+  }
+  &__control{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__overall{
+    display: flex;
+    justify-content: space-between;
+    .overall-input{
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      width: 355px;
+      height: 45px;
+      font-family: LatoWeb;
+      color: #b1b1b1;
+      font-size: 13px;
+      font-weight: 300;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+    .btn-white{
+      margin-top: 20px;
+      width: auto;
+      height: auto;
+      font-family: LatoWeb;
+      color: #4a4a4a;
+      font-size: 11px;
+      font-weight: 700;
+      text-align: left;
+      padding: 12px 18px;
+
+    }
+    .cart-total{
+      background-color: #f5f3f3;
+      height: 215px;
+      width: 360px;
+      padding: 40px;
+      text-align: right;
+    }
+
+  }
+  .button{
+    margin-top: 40px;
+    height: 50px ;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+
+  }
+  &__sub{
+    font-family: LatoWeb;
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase;
+    display: inline;
+  }
+  &__grand{
+    margin-top: 14px;
+    font-family: LatoWeb;
+    color:$text-main;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+  }
+  &__title{
+    font-family: LatoWeb, sans-serif;
+    color: $text-main;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  label[for=coupon-num]{
+    padding-top: 28px;
+    display: inline-block;
+
+  }
+}
+
+.price-mar{
+  margin-left: 10px;
+}
+.btn-white{
+  padding: 20px 40px;
+  color: $border-color - #a0a0a0;
+  background: $bg-primary;
+  font-weight: bold;
+  border: 1px solid $border-color;
+  text-transform: uppercase;
+  @include transition(all, 0.3s);
+  &:hover{
+    color: $bg-primary;
+    background: $border-color - #a0a0a0;
+  }
+}
+.shipping-adress, .coupon, .cart-total{
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+}
+.accent{
+  color:$accent;
+}
